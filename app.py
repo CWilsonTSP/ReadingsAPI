@@ -52,7 +52,7 @@ def index():
                 },
                 {
                     "verse": verses[3].text.replace('\n', ''),
-                    "text": readings[3].text.strip().replace('\n',' ')
+                    "text": readings[3].text.strip().replace('\n',' ').replace(u"\u00A0"," ").replace('  ',' ')
                 }
                 ]
         }
@@ -63,7 +63,7 @@ def index():
             "readings" : [
                 {
                     "verse": verses[0].text.replace('\n', ''),
-                    "text": readings[0].text.strip().replace('\n',' ')
+                    "text": readings[0].text.strip().replace('\n',' ').replace(u"\u00A0"," ").replace('  ',' ')
                 },
                 {
                     "verse": verses[1].text.replace('\n', ''),
@@ -71,7 +71,7 @@ def index():
                 },
                 {
                     "verse": verses[2].text.replace('\n', ''),
-                    "text": readings[2].text.strip().replace('\n',' ')
+                    "text": readings[2].text.strip().replace('\n',' ').replace(u"\u00A0"," ").replace('  ',' ')
                 },
                 {
                     "verse": verses[3].text.replace('\n', ''),
@@ -79,7 +79,7 @@ def index():
                 },
                 {
                     "verse": verses[4].text.replace('\n', ''),
-                    "text": readings[4].text.strip().replace('\n',' ')
+                    "text": readings[4].text.strip().replace('\n',' ').replace(u"\u00A0"," ").replace('  ',' ')
                 }
                 ]
         }
