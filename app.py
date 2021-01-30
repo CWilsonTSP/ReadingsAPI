@@ -44,7 +44,7 @@ def index():
                 },
                 {
                     "verse": verses[1].text.replace('\n', ''),
-                    "text": readings[1].text.strip().replace('\n',' ')
+                    "text": readings[1].text.replace('\n',' ').replace('R. ', '\nR. ').strip()
                 },
                 {
                     "verse": verses[2].text.replace('\n', ''),
