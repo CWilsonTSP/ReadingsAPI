@@ -40,19 +40,19 @@ def index():
             "readings" : [
                 {
                     "verse": verses[0].text.replace('\n', ''),
-                    "text": readings[0].text.replace('\n',' ')
+                    "text": readings[0].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[1].text.replace('\n', ''),
-                    "text": readings[1].text.replace('\n',' ')
+                    "text": readings[1].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[2].text.replace('\n', ''),
-                    "text": readings[2].text.replace('\n',' ')
+                    "text": readings[2].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[3].text.replace('\n', ''),
-                    "text": readings[3].text.replace('\n',' ')
+                    "text": readings[3].text.strip().replace('\n',' ')
                 }
                 ]
         }
@@ -63,23 +63,23 @@ def index():
             "readings" : [
                 {
                     "verse": verses[0].text.replace('\n', ''),
-                    "text": readings[0].text.replace('\n',' ')
+                    "text": readings[0].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[1].text.replace('\n', ''),
-                    "text": readings[1].text.replace('\n',' ')
+                    "text": readings[1].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[2].text.replace('\n', ''),
-                    "text": readings[2].text.replace('\n',' ')
+                    "text": readings[2].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[3].text.replace('\n', ''),
-                    "text": readings[3].text.replace('\n',' ')
+                    "text": readings[3].text.strip().replace('\n',' ')
                 },
                 {
                     "verse": verses[4].text.replace('\n', ''),
-                    "text": readings[4].text.replace('\n',' ')
+                    "text": readings[4].text.strip().replace('\n',' ')
                 }
                 ]
         }
