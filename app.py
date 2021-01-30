@@ -40,7 +40,7 @@ def index():
             "readings" : [
                 {
                     "verse": verses[0].text.replace('\n', ''),
-                    "text": readings[0].text..replace('\n','')
+                    "text": readings[0].text.replace('\n','')
                 },
                 {
                     "verse": verses[1].text.replace('\n', ''),
