@@ -19,7 +19,7 @@ def index():
     soup = BeautifulSoup(page.content, 'html.parser')
 
     # get title
-    titles = soup.select('div[class="innerblock"] > div[class="content-header"]')
+    titles = soup.select('div[class="innerblock"] > div[class="content-header"] > h3[class="name"]')
 
     # get body
     readings = soup.select('div[class="innerblock"] > div[class="content-body"]')
@@ -39,6 +39,7 @@ def index():
             "title": title[0].text.replace('\n', ''),
             "readings" : [
                 {
+                    "title": titles[0].text.replace('\n',''),
                     "verse": verses[0].text.replace('\n', ''),
                     "text": readings[0].text.strip().replace('\n',' ').replace(u"\u00A0"," ").replace('  ',' ')
                 },
