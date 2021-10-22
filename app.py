@@ -51,7 +51,7 @@ def index():
             reading_list.append({
                         "title": titles[i].text.strip().replace('\n',''),
                         "verse": verses[i].text.strip().replace('\n', ''),
-                        "text": readings[i].text.strip().replace('\n', ' ')
+                        "text": readings[i].text.strip().replace('\n', ' ').replace(' \"', '\n\"').replace('\" ', '\"\n')
                     })
 
     rv["readings"] = reading_list
