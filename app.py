@@ -41,7 +41,7 @@ def index():
 
     reading_list = []
     for i in range(0, len(readings)):
-        if i == 2:
+        if i == 1:
             reading_list.append({
                         "title": titles[i].text.strip().replace('\n',''),
                         "verse": verses[i].text.strip().replace('\n', ''),
