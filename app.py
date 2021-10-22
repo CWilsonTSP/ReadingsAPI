@@ -41,7 +41,7 @@ def index():
 
     reading_list = []
     for i in range(0, len(readings)):
-        if i == 1:
+        if titles[i].text.strip() == "Responsorial Psalm" or titles[i].text.strip() == "Alleluia":
             reading_list.append({
                         "title": titles[i].text.strip().replace('\n',''),
                         "verse": verses[i].text.strip().replace('\n', ''),
@@ -51,7 +51,7 @@ def index():
             reading_list.append({
                         "title": titles[i].text.strip().replace('\n',''),
                         "verse": verses[i].text.strip().replace('\n', ''),
-                        "text": readings[i].text.strip().replace('\n', '')
+                        "text": readings[i].text.strip().replace('\n', ' ')
                     })
 
     rv["readings"] = reading_list
